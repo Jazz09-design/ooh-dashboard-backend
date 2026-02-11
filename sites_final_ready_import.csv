@@ -1,0 +1,32 @@
+site_code,site_name,city,area,type_ooh,latitude,longitude,is_active
+TANG-BODE-001,"Jl. Raya Serang view Exit Tol Balaraja Timur menuju Cukupan Tangerang, Balaraja Serang",Kab. Tangerang,BODETABEK,Billboard Vertical,-6.2038949,106.4815421,True
+TANG-BODE-002,Jl. Raya Pusdiklat View Graha Raya Menuju Alam sutra,Tangerang Selatan,BODETABEK,Billboard Vertical,-6.239849,106.663023,True
+BEKA-BODE-003,Jl. Arteri KH Noer Ali depan Shell Kalimalang,Bekasi,BODETABEK,Billboard Vertical,-6.249739,106.971361,True
+TANG-BODE-004,Lampu merah Jl.Raya Cikupa,Kab. Tangerang,BODETABEK,Billboard Vertical,-6.2066541,106.5208056,True
+SEMA-SEMA-005,perempatan Jl.MT Haryono,Semarang,SEMARANG,Billboard Vertical,-7.004751,110.431952,True
+SEMA-SEMA-006,Jl. Setia budi menuju Gombel Golf,Semarang,SEMARANG,Billboard Vertical,-7.0442174,110.4214601,True
+BALI-BALI-007,Jl.Sunset Ring road,Bali,BALI,Billboard Vertical,-8.7060083,115.1826613,True
+BALI-BALI-008,Jl.Raya Canggu Kerobokan,Bali,BALI,Billboard Vertical,-8.645748,115.1620366,True
+SOLO-SOLO-009,"Jl. Raya Solo - Ngawi Fly Over Palur, Karang anyar",Solo,SOLO,Billboard Vertical,-7.5666217,110.8683444,True
+JOGJ-YOGY-010,Pertigaan Janti Jl. Laksda Adi Sucipto,Jogjakarta,YOGYAKARTA,Billboard Vertical,-7.783424,110.4104326,True
+MEDA-MEDA-011,Jl. Kapten Sumarsono Simpang Tol Helvitia,Medan,MEDAN,Billboard Horizontal,3.6155037,98.6292185,True
+BAND-BAND-012,Jl. Laswi,Bandung,BANDUNG,Billboard Vertical,-6.9223564,107.6301928,True
+BAND-BAND-013,Jl. Cemara Sukajadi (Sebrang mandiri),Bandung,BANDUNG,Billboard Vertical,-6.883972,107.596528,True
+SURA-SURA-014,Jl.Raya Ngagel,Surabaya,SURABAYA,Billboard Horizontal,-7.291205,112.743039,True
+SURA-SURA-015,Jl. Gunung Sari,Surabaya,SURABAYA,Billboard Vertical,-7.307254,112.719597,True
+MEDA-MEDA-016,Jl. Mansyur,Medan,MEDAN,Billboard Vertical,3.5674621,98.6501977,True
+JAKA-JABO-017,Jl. Hang Tuah,JAKARTA SELATAN,JABODETABEK,vetikal,-6.2291813,106.7978666,True
+JAKA-JABO-018,Jl. Raya Kalibata,JAKARTA SELATAN,JABODETABEK,vetikal,-6.1914454,106.7422475,True
+JAKA-JABO-019,Jl. Sultan Iskandar Muda PIM 3,JAKARTA SELATAN,JABODETABEK,vetikal,-6.2614041,106.7820474,True
+JAKA-JABO-020,Jl. Sisingamangaraja (Blok M),JAKARTA SELATAN,JABODETABEK,vetikal,-6.2426132,106.7984629,True
+JAKA-JABO-021,HR Rasuna Said (LED Granadi),JAKARTA SELATAN,JABODETABEK,vetikal,-6.2298857,106.8332828,True
+JAKA-JABO-022,Bundaran Tugu Tani,JAKARTA SELATAN,JABODETABEK,vetikal,-6.1833046,106.8347179,True
+JAKA-JABO-023,Metro Pondok Indah,JAKARTA SELATAN,JABODETABEK,Billboard Horizontal,-6.2800757,106.7804839,True
+JAKA-JABO-024,Wolter Monginsidi,JAKARTA SELATAN,JABODETABEK,Billboard Horizontal,-6.2389203,106.8150452,True
+JAKA-JABO-025,Jl. Kyai Tapa,Jakarta Barat,JABODETABEK,Billboard Vertical,-6.1659355,106.8005907,True
+DEPO-JABO-026,Jl. Margonda Raya depan Serabi,DEPOK,JABODETABEK,vetikal,-6.3644643,106.8337495,True
+DEPO-JABO-027,Jl.Margonda Raya Roti Bakar Eddy,DEPOK,JABODETABEK,vetikal,-6.3709264,106.8332672,True
+MEDA-MEDA-028,Sun Plaza Mall,Medan,Medan,Billboard Horizontal,3.5836675,98.6718406,True
+MAKA-MAKA-029,Jl. Samratulangi (depan hotel Ibis),Makassar,Makassar,Billboard Vertical,-5.1488874,119.4156786,True
+YOGY-YOGY-030,Mall JCM Entrance,YOGYAKARTA,YOGYAKARTA,Billboard Horizontal,-7.753307,110.3621964,True
+YOGY-YOGY-031,Jl. Padjajaran (Perempatan Anggajaya),YOGYAKARTA,YOGYAKARTA,Billboard Vertical,-7.7582192,110.3959735,True
