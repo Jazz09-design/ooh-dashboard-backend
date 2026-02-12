@@ -1,0 +1,4 @@
+cd /Users/user/ooh-dashboard/backend-vercel
+git add vercel.json
+git commit -m "chore: add vercel.json to enable serverless functions"
+git push
