@@ -235,19 +235,20 @@ async function getOverview(req, res) {
       traffic,
       demography
     });
-} catch (err) {
-  console.error("OVERVIEW ERROR:", err);
+  } catch (err) {
+    console.error("OVERVIEW ERROR:", err);
 
-  return res.status(500).json({
-    error: "Internal server error",
-    message: err?.message,
-    code: err?.code,
-    detail: err?.detail,
-    where: err?.where,
-    stack: (err?.stack || "").split("\n").slice(0, 8) // biar tidak kepanjangan
-  });
-}
+    return res.status(500).json({
+      error: "Internal server error",
+      message: err?.message,
+      code: err?.code,
+      detail: err?.detail,
+      where: err?.where,
+      stack: (err?.stack || "").split("\n").slice(0, 8),
+    });
+  }
 }
 
 module.exports = { getOverview };
+
 

@@ -6,6 +6,9 @@ const { z } = require("zod");
 const { pool } = require("./db/index.js");
 
 const app = express();
+app.get("/health", (req, res) => res.json({ ok: true }));
+app.get("/__whoami", (req, res) => res.json({ file: "server.js", ts: new Date().toISOString() }));
+
 app.use(cors({
   origin: true,            // izinkan origin dari mana saja (untuk dev)
   credentials: true
@@ -13,14 +16,8 @@ app.use(cors({
 app.use(cors());
 app.use(express.json());
 const dashboardRoutes = require("./routes/dashboard.routes");
-app.use("/api/dashboard", dashboardRoutes);
-app.get("/api/dashboard/demography", (req, res) => {
-  res.json({
-    ok: true,
-    from: "server.js",
-    query: req.query
-  });
-});
+app.use("/api/dashboard",dashboardRoutes);
+
 console.log(
   "DASHBOARD ROUTES REGISTERED:",
   dashboardRoutes.stack
@@ -52,7 +49,7 @@ app.get("/api/dashboard", async (req, res) => {
 
     // 1) Site detail
     const siteQ = await client.query(
-      `SELECT id, name, latitude AS lat, longitude AS lon
+      `SELECT id, site_name AS name, latitude AS lat, longitude AS lon
        FROM sites
        WHERE id = $1 AND is_active = true`,
       [site_id]
@@ -96,10 +93,10 @@ app.get("/api/dashboard", async (req, res) => {
 
     // 4) Traffic daily
     const dailyQ = await client.query(
-      `SELECT d AS date, volume AS value
+      `SELECT date, volume AS value
        FROM traffic_daily
-       WHERE site_id = $1 AND d BETWEEN $2::date AND $3::date
-       ORDER BY d ASC`,
+       WHERE site_id = $1 AND date BETWEEN $2::date AND $3::date
+       ORDER BY date ASC`,
       [site_id, start, end]
     );
 
@@ -186,7 +183,7 @@ app.get("/api/dashboard", async (req, res) => {
   } catch (err) {
     await client.query("ROLLBACK");
     console.error(err);
-    return res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({ error: "Internal server error", detail: err.message });
   } finally {
     client.release();
   }

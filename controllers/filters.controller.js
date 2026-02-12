@@ -1,4 +1,4 @@
-const { pool } = require("../db");
+const { pool } = require("../db.js"); // ✅ ini yang benar (mengarah ke db/index.js yang sudah kita patch)
 console.log("FILTERS CONTROLLER PATCH LOADED ✅", __filename);
 
 

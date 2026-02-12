@@ -1,5 +1,5 @@
 const { z } = require("zod");
-const { pool } = require("../db");
+const { pool } = require("../db.js");
 
 const DemoQuery = z.object({
   site_id: z.coerce.number().int().positive(),
