@@ -10,8 +10,12 @@ app.get("/health", (req, res) => res.json({ ok: true }));
 app.get("/__whoami", (req, res) => res.json({ file: "server.js", ts: new Date().toISOString() }));
 
 app.use(cors({
-  origin: true,            // izinkan origin dari mana saja (untuk dev)
-  credentials: true
+  origin: [
+    "https://ooh-dashboard-frontend-glsu.vercel.app",
+    "https://media-analitik.project-asliku.com"
+  ],
+  methods: ["GET","POST","PUT","DELETE","OPTIONS"],
+  allowedHeaders: ["Content-Type","Authorization"]
 }));
 app.use(cors());
 app.use(express.json());
