@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 .DS_Store
+=======
+
+node_modules/
+.DS_Store
+.env
+>>>>>>> 3271a97 (fix: proper CORS allowlist for frontend domains)
